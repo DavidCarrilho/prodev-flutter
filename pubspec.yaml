@@ -32,6 +32,12 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  # test: para conseguir rodar testes no dart sem precisar do Flutter
+  test:
+  # mockito: para conseguir mocar classes
+  mockito:
+  # faker: para rerar valores aleatórios
+  faker:
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
