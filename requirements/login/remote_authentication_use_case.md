@@ -21,4 +21,4 @@
 
 > ## Exceção - Credenciais inválidas
 
-1. Sistema retorna uma mensagem de erro informando que as crendenciais estão erradas
+1. OK - Sistema retorna uma mensagem de erro informando que as crendenciais estão erradas
