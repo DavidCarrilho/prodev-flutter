@@ -1,4 +1,3 @@
-import 'package:appprodev/domain/entities/account_entity.dart';
 import 'package:meta/meta.dart';
 
 import '../../domain/usecases/authentication.dart';
