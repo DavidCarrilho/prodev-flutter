@@ -17,7 +17,7 @@
 
 > ## Exceção - Falha no servidor
 
-1. Sistema retorna uma mensagem de erro inesperado
+1. OK - Sistema retorna uma mensagem de erro inesperado
 
 > ## Exceção - Credenciais inválidas
 
