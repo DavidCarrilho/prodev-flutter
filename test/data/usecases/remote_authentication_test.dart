@@ -24,9 +24,9 @@ void main() {
     sut = RemoteAuthentication(httpClient: httpClient, url: url);
     params = AuthenticationParams(email: faker.internet.email(), secret: faker.internet.password());
   });
-  test('Should call HttpClien with correct values', () async {
+  test('Should call HttpClient with correct values', () async {
      when(httpClient.request( url: anyNamed('url'), method: anyNamed('method'), body: anyNamed('body')))
-        .thenAnswer((_) async => {'accessToekn': faker.guid.guid(), 'name': faker.person.name()});
+        .thenAnswer((_) async => {'accessToken': faker.guid.guid(), 'name': faker.person.name()});
     // act
     await sut.auth(params);
     // assert
@@ -68,5 +68,12 @@ void main() {
         .thenAnswer((_) async => {'accessToken': accessToken, 'name': faker.person.name()});
     final account = await sut.auth(params);
     expect(account.token, accessToken);
+  });
+
+   test('Should throw UnexpectedError if HttpClient returns 200 with invalid data', () async {
+     when(httpClient.request( url: anyNamed('url'), method: anyNamed('method'), body: anyNamed('body')))
+        .thenAnswer((_) async => {'invalid_key': 'invalid_value'});
+    final future = sut.auth(params);
+    expect(future, throwsA(DomainError.unexpected));
   });
 }
