@@ -10,7 +10,7 @@
 
 > ## Erros
 
-1. Bad request - 400
+1. ✅ Bad request - 400
 2. Unautorized - 401
 3. Forbiden - 403
 4. Internal server error - 500
