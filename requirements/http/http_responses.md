@@ -13,7 +13,8 @@
 1. ✅ Bad request - 400
 2. ✅ Unautorized - 401
 3. ✅ Forbiden - 403
-4. ✅ Internal server error - 500
+4. ✅ Not Found - 404
+5. ✅ Internal server error - 500
 
 > ## Exceção - Status code diferente dos citados acima
 
