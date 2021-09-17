@@ -13,11 +13,11 @@
 1. ✅ Bad request - 400
 2. Unautorized - 401
 3. Forbiden - 403
-4. Internal server error - 500
+4. ✅ Internal server error - 500
 
 > ## Exceção - Status code diferente dos citados acima
 
-1. Internal server error - 500
+1. ✅ Internal server error - 500
 
 > ## Exceção - Http request deu alguma exceção
 
