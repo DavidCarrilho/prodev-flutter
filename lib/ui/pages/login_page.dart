@@ -1,3 +1,4 @@
+import '../components/component.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatelessWidget {
@@ -6,44 +7,61 @@ class LoginPage extends StatelessWidget {
     return Scaffold(
       body: SingleChildScrollView(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
-            Container(
-              child: Image.asset('lib/ui/assets/logo.png'),
+            LoginHeader(),
+            HeadLine1(
+              text: 'Login',
             ),
-            Text('Login'.toUpperCase()),
-            Form(
-                child: Column(
-              children: <Widget>[
-                TextFormField(
-                  decoration: InputDecoration(
-                    labelText: 'Email',
-                    icon: Icon(Icons.email),
+            Padding(
+              padding: const EdgeInsets.all(32.0),
+              child: Form(
+                  child: Column(
+                children: <Widget>[
+                  TextFormField(
+                    decoration: InputDecoration(
+                      labelText: 'Email',
+                      icon: Icon(
+                        Icons.email,
+                        color: Theme.of(context).primaryColorLight,
+                      ),
+                    ),
+                    keyboardType: TextInputType.emailAddress,
                   ),
-                  keyboardType: TextInputType.emailAddress,
-                ),
-                TextFormField(
-                  decoration: InputDecoration(
-                    labelText: 'Senha',
-                    icon: Icon(Icons.lock),
+                  Padding(
+                    padding: const EdgeInsets.only(
+                      top: 8.0,
+                      bottom: 32.0,
+                    ),
+                    child: TextFormField(
+                      decoration: InputDecoration(
+                        labelText: 'Senha',
+                        icon: Icon(
+                          Icons.lock,
+                          color: Theme.of(context).primaryColorLight,
+                        ),
+                      ),
+                      obscureText: true,
+                    ),
                   ),
-                  obscureText: true,
-                ),
-                RaisedButton(
-                  onPressed: () {},
-                  child: Text(
-                    'Entrar'.toUpperCase(),
+                  RaisedButton(
+                    onPressed: () {},
+                    child: Text(
+                      'Entrar'.toUpperCase(),
+                    ),
                   ),
-                ),
-                FlatButton.icon(
-                  onPressed: () {},
-                  icon: Icon(Icons.person),
-                  label: Text('Criar conta'),
-                )
-              ],
-            ))
+                  FlatButton.icon(
+                    onPressed: () {},
+                    icon: Icon(Icons.person),
+                    label: Text('Criar conta'),
+                  )
+                ],
+              )),
+            )
           ],
         ),
       ),
     );
   }
 }
+
