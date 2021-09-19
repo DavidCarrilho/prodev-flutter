@@ -33,12 +33,40 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_launcher_icons: ^0.7.5
   # test: para conseguir rodar testes no dart sem precisar do Flutter
   test:
   # mockito: para conseguir mocar classes
   mockito:
   # faker: para rerar valores aleatórios
   faker:
+
+flutter_icons:
+  ios: true
+  android: true
+  image_path_ios: lib/ui/assets/icon/ios.png
+  image_path_android: lib/ui/assets/icon/android.png
+  adaptive_icon_background: lib/ui/assets/icon/background.png
+  adaptive_icon_foreground: lib/ui/assets/icon/foreground.png
+
+# OR
+
+# flutter_icons:
+#   android: true
+#   ios: true 
+#   image_path_ios: "assets/launcher/icon.png"
+#   image_path_android: "assets/launcher/icon.png"
+#   adaptive_icon_background: "#4f5647"
+#   adaptive_icon_foreground: "assets/launcher/icon.png"
+
+# OR
+
+# flutter_icons:
+#   android: true
+#   ios: false
+#   image_path: "assets/icons/icon.png"
+#   adaptive_icon_background: "#F9C607"
+#   adaptive_icon_foreground: "assets/icons/icon.png"
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

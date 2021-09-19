@@ -6,7 +6,7 @@ import '../../ui/pages/pages.dart';
 class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.light);
+    SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.light); // change statusBar to light mode
 
     final primaryColor = Color.fromRGBO(136, 14, 79, 1);
     final primaryColorDark = Color.fromRGBO(96, 0, 39, 1);
