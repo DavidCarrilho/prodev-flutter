@@ -2,8 +2,8 @@
 
 > ## Regras
 
-1. Os campos devem começar sem exibir mensagem de erro
-2. O botão de fazer login deve começar desabilitado
+1. ✅ Os campos devem começar sem exibir mensagem de erro
+2. ✅ O botão de fazer login deve começar desabilitado
 3. Após digitar algo em um campo, a mesagem de erro só deve sumir se o campofor válido
 4. Validar email quando o usuáio digitar no campo
 5. Mostrar mensagem de erro se o email for inválido
