@@ -38,7 +38,7 @@ dev_dependencies:
   test:
   # mockito: para conseguir mocar classes
   mockito:
-  # faker: para rerar valores aleatórios
+  # faker: para gerar valores aleatórios
   faker:
 
 flutter_icons:
